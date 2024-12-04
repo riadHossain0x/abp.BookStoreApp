@@ -1,0 +1,101 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "BookStoreApp.Application": {
+      "path": "src/BookStoreApp.Application/BookStoreApp.Application.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.Application.Tests": {
+      "path": "test/BookStoreApp.Application.Tests/BookStoreApp.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "BookStoreApp.Domain.Shared": {
+      "path": "src/BookStoreApp.Domain.Shared/BookStoreApp.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.Application.Contracts": {
+      "path": "src/BookStoreApp.Application.Contracts/BookStoreApp.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.HttpApi": {
+      "path": "src/BookStoreApp.HttpApi/BookStoreApp.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.HttpApi.Client": {
+      "path": "src/BookStoreApp.HttpApi.Client/BookStoreApp.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.EntityFrameworkCore.Tests": {
+      "path": "test/BookStoreApp.EntityFrameworkCore.Tests/BookStoreApp.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "BookStoreApp.EntityFrameworkCore": {
+      "path": "src/BookStoreApp.EntityFrameworkCore/BookStoreApp.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.TestBase": {
+      "path": "test/BookStoreApp.TestBase/BookStoreApp.TestBase.abppkg",
+      "folder": "test"
+    },
+    "BookStoreApp.Domain.Tests": {
+      "path": "test/BookStoreApp.Domain.Tests/BookStoreApp.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "BookStoreApp.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/BookStoreApp.HttpApi.Client.ConsoleTestApp/BookStoreApp.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "BookStoreApp.DbMigrator": {
+      "path": "src/BookStoreApp.DbMigrator/BookStoreApp.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.HttpApi.Host": {
+      "path": "src/BookStoreApp.HttpApi.Host/BookStoreApp.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "BookStoreApp.Domain": {
+      "path": "src/BookStoreApp.Domain/BookStoreApp.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
