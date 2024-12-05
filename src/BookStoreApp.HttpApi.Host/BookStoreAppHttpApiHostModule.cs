@@ -39,6 +39,7 @@ using Volo.Abp.OpenIddict;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.Studio.Client.AspNetCore;
 using Volo.Abp.Security.Claims;
+using Volo.Abp.AutoMapper;
 
 namespace BookStoreApp;
 
@@ -113,6 +114,7 @@ public class BookStoreAppHttpApiHostModule : AbpModule
         ConfigureAuthentication(context);
         ConfigureUrls(configuration);
         ConfigureBundles();
+        ConfigureAutoMapper();
         ConfigureConventionalControllers();
         ConfigureSwagger(context, configuration);
         ConfigureVirtualFileSystem(context);
@@ -125,6 +127,14 @@ public class BookStoreAppHttpApiHostModule : AbpModule
         context.Services.Configure<AbpClaimsPrincipalFactoryOptions>(options =>
         {
             options.IsDynamicClaimsEnabled = true;
+        });
+    }
+
+    private void ConfigureAutoMapper()
+    {
+        Configure<AbpAutoMapperOptions>(options =>
+        {
+            options.AddMaps<BookStoreAppHttpApiHostModule>();
         });
     }
 
